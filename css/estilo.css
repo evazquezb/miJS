@@ -1,0 +1,106 @@
+body {
+    font-family: 'Sen', sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0ffff;
+    padding: 7px;
+    
+}
+
+.logo {
+    left: 0px;
+    height: auto;
+    width: 250px;
+    transition: transform 1s;
+}
+
+.logo:hover {
+    transform: scale(1.01);
+}
+
+.nav-container {
+    position: relative;
+    margin: 0px 0px;
+    top: 10px;
+
+}
+
+.nav-container a {
+    padding: 0.9375rem;
+    margin: 0px 10px;
+    color: black;
+    
+}
+
+
+.facebook:hover {
+    padding: 0.9375rem;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.instagram:hover {
+    padding: 0.9375rem;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.whatsapp:hover {
+    padding: 0.9375rem;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+/* El slider comienza aqui */
+
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+    position: relative;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider__btn:hover{
+    background: #fff;
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right{
+    right: 10px;
+}
+
